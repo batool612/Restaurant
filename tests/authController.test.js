@@ -1,5 +1,3 @@
-
-
 const {signUp,login} = require('../controller/authController');
 
 const userModel = require('../models/userModel');
@@ -172,4 +170,5 @@ describe('Auth Controller', () => {
 
     
 });
+
 
