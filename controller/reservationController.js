@@ -106,7 +106,6 @@ const manageReservation = async (req, res) => {
       const { reservationId } = req.params;
       const { status } = req.body;
 
-
       console.log('Updating reservation:', reservationId, 'to status:', status);
 
 
@@ -198,9 +197,6 @@ const getAvailableTables = async (req, res) => {
     }
   };
   
-  module.exports = {
-    getAvailableTables,
-  };
 
 
 module.exports = {
@@ -209,6 +205,7 @@ module.exports = {
     cancelReservation,
     manageReservation,
     getAllReservations,
-    viewReservations,getAvailableTables
+    viewReservations,
+    getAvailableTables
 
 };
